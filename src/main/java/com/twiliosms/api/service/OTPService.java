@@ -24,6 +24,7 @@ public class OTPService {
         twilioService.sendSMS(phoneNumber, messageBody);
     }
 // verifyOTP
+    //new
     public   boolean verifyOTP(String phoneNumber, String otp) {
         if (otpMap.containsKey(phoneNumber) && otpMap.get(phoneNumber).equals(otp)) {
             otpMap.remove(phoneNumber);
