@@ -16,9 +16,9 @@ public class SMSController {
     public SMSController(TwilioService twilioService) {
         this.twilioService = twilioService;
     }
-
     //  http://localhost:8080/send-sms
-
+    //  http://localhost:8080/send-sms
+    //  http://localhost:8080/send-sms
     @PostMapping("/send-sms")
     public void sendSMS(@RequestBody SMSRequest request) {
         twilioService.sendSMS(request.getToPhoneNumber(), request.getMessageBody());
